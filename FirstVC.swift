@@ -13,9 +13,12 @@ class FirstVC : UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var creatIDBtn: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        print("앱시작")
+       
       
     }
 
@@ -25,6 +28,8 @@ class FirstVC : UIViewController {
         creatIDBtn.layer.borderColor = UIColor(red: 25/255.0, green: 100/255.0, blue: 80/255.0, alpha: 1.0).cgColor
         creatIDBtn.layer.borderWidth = 1.0
     }
+    
+    
 
     @IBAction func tapCreatIDBtn(_ sender: UIButton) {
         let creatInputUserNameVC = CreatInputUserNameVC()
@@ -34,5 +39,7 @@ class FirstVC : UIViewController {
     }
     
     
+    
 }
+
 
